@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="sheet.css">
+</head>
+
+<body>
+
+  <!-- Header  -->
+  <section id="topbar" class=" d-flex align-items-center justify-content-center">
+    <div class=" d-flex align-items-center">
+      <div class="contact-info d-flex align-items-center mx-5">
+        <i class="fa-regular fa-envelope"><a class="" href="#">Example@gmail.com</a></i>
+        <i class="fa-solid fa-mobile-screen-button " id="home"><span>(675)-6754362</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="social.html" class="twitter me-4"><i class="fa-brands fa-twitter"></i></a>
+        <a href="social.html" class="facebook mx-4"><i class="fa-brands fa-facebook"></i></a>
+        <a href="social.html" class="instagram mx-4"><i class="fa-brands fa-instagram"></i></a>
+        <a href="social.html" class="linkedin ms-4"><i class="fa-brands fa-google"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0 ms-4" href="index.html">
+          <img src="img/ok.png" height="50" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav ms-5 ps-5 d-flex justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-4 fw-bold mx-2" href="#f1">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-4 fw-bold mx-2" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-4 fw-bold mx-2" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-------rught element----------->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="link-secondary me-5" data-mdb-toggle="modal" data-mdb-target="#exampleModal2" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-user" style="color: black;"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+            <li>
+              <a class="dropdown-item text-center text-success" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+                href="#">Sign up</a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center text-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1"
+                href="#">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-center">
+          <h5 class="modal-title fs-2" id="exampleModalLabel">Sign up</h5>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="d-flex justify-content-around">
+              <div>
+                <p class="m-0 p-0 ms-2">First Name</p>
+                <input class="form-control" type="text">
+              </div>
+              <div>
+                <p class="m-0 p-0 ms-2">Last Name</p>
+                <input class="form-control" type="text">
+              </div>
+            </div>
+            <p class="m-0 p-0 ms-3 mt-2">E-mail</p>
+            <div class="d-flex justify-content-around ">
+              <input class="form-control mx-2" type="text">
+            </div>
+            <p class="m-0 p-0 ms-3 mt-2">Phone</p>
+            <div class="d-flex justify-content-around">
+              <input class="form-control mx-2" type="text">
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+              <div>
+                <p class="m-0 p-0 ms-2">Passward</p>
+                <input class="form-control" type="password">
+              </div>
+              <div>
+                <p class="m-0 p-0 ms-2">Confirm Passward</p>
+                <input class="form-control" type="password">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-info w-75">sign up</button>
+        </div>
+        <p class="ms-3 text-center">already have an account.<a data-mdb-toggle="modal" data-mdb-target="#exampleModal1"
+            href="">Log in</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Modal1 -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-center">
+          <h5 class="modal-title fs-2" id="exampleModalLabel">Log in</h5>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <p class="m-0 p-0 ms-4 mt-2">User Name</p>
+            <div class="d-flex justify-content-around ">
+              <input class="form-control mx-3" type="text">
+            </div>
+            <p class="m-0 p-0 ms-4 mt-2">Passward</p>
+            <div class="d-flex justify-content-around">
+              <input class="form-control mx-3" type="password">
+            </div>
+            <p class="text-center"><a class="" href="#">Forget Password??</a></p>
+          </form>
+          <div class="d-flex justify-content-center mt-3">
+            <button type="button" class="btn btn-info w-75">log in</button>
+          </div>
+          <p class="text-center">Not a mamber <a data-mdb-toggle="modal" data-mdb-target="#exampleModal" href="">sign
+              up</a></p>
+          <h5 class="m-0 p-0 mb-3 text-center">Or</h5>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary w-25 mx-3">Facebook</button>
+            <button type="button" class="btn btn-danger w-25 mx-3">Google</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal2 -->
+  <div class="modal fade  modal-lg" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your Cart</h5>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-around fw-bolder border-bottom border-1-dark">
+            <p>#</p>
+            <p>Name</p>
+            <p>price</p>
+            <p></p>
+          </div>
+          <div class="d-flex justify-content-around border-bottom border-1-dark py-3">
+            <p>1</p>
+            <p>Product 1</p>
+            <p>$500</p>
+            <p><i class="fa fa-close"></i></p>
+          </div>
+          <div class="d-flex justify-content-around border-bottom border-1-dark py-3">
+            <p>2</p>
+            <p>Product 2</p>
+            <p>$200</p>
+            <p><i class="fa fa-close"></i></p>
+          </div>
+          <div class="d-flex justify-content-around border-bottom border-1-dark py-3">
+            <p>3</p>
+            <p>Product 3</p>
+            <p>$400</p>
+            <p><i class="fa fa-close"></i></p>
+          </div>
+          <div class="d-flex justify-content-around border-bottom border-1-dark py-3">
+            <p>4</p>
+            <p>Product 4</p>
+            <p>$700</p>
+            <p><i class="fa fa-close"></i></p>
+          </div>
+          <div class="d-flex justify-content-around border-bottom border-1-dark py-3">
+            <p>5</p>
+            <p>Product 5</p>
+            <p>$1000</p>
+            <p><i class="fa fa-close"></i></p>
+          </div>
+          <div class="d-flex justify-content-around fw-bold">
+            <p>Total</p>
+            <p class="text-white">Name</p>
+            <p>$2800</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+
+
+  <div class="d-flex justify-content-around my-4 mx-4 h-100">
+    <div class="w-25">
+      <div class="list-group list-group-light">
+        <a href="#f1" class="list-group-item list-group-item-action px-3 border-0 active" aria-current="true">
+          Bracket Fans</a>
+        <a href="#f2" class="list-group-item list-group-item-action px-3 border-0" id="top">Ceiling fans</a>
+        <a href="#f3" class="list-group-item list-group-item-action px-3 border-0">Table Fans</a>
+        <a href="#f4" class="list-group-item list-group-item-action px-3 border-0">Pedestal Fans</a>
+        <a href="#f5" class="list-group-item list-group-item-action px-3 border-0 ">Mist Fans</a>
+        <a href="#f6" class="list-group-item list-group-item-action px-3 border-0 ">louver Fans</a>
+        <a href="#f7" class="list-group-item list-group-item-action px-3 border-0 ">Exhaust Fans</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <a href="product detail page.html">
+          <div class="col ">
+            <div class="card h-100 hover-shadow">
+              <img src="img/131.png" class="card-img-top" alt="Palm Springs Road" />
+              <div class="card-body">
+                <h5 class="card-title text-dark">ROYAL SOLID Fan</h5>
+                <p class="card-text fs-2 text-success">
+                  30.5$
+                </p>
+                <div>
+                  <button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="product detail page2.html"><div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/132.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer" id="f1">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="product detail3.html"><div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/141.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </a> 
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/142.png" class="card-img-top" alt="Palm Springs Road"/>
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/151.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card h-100 hover-shadow" >
+            <img src="img/152.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/804.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/11.png" class="card-img-top" alt="Skyscrapers" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col"  id="f2">
+          <div class="card h-100 hover-shadow">
+            <img src="img/12.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2" >Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/13.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/21.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/22.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/23.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/31.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/32.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/41.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/42.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/43.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/44.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/51.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/52.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/53.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/61.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/62.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/63.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/64.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/65.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/200.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/201.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/203.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/300.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/301.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/401.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/402.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/403.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/404.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/501.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/502.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/503.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <<p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/504.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/600.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/601.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/701.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/702.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/801.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/802.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Royal Aura fan F007</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/803.jpg" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Samara Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col" id="f3">
+          <div class="card h-100 hover-shadow">
+            <img src="img/71.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Desk Fan Mini Silent</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/72.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">3 Blade Table Fans</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/81.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">3 Blade Table Fans</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/82.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Desk Fan Mini Silent</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/91.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">3 Blade Table Fans</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/92.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Desk Fan Mini Silent</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col" id="f4">
+          <div class="card h-100 hover-shadow">
+            <img src="img/161.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/162.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="f5">
+          <div class="card h-100 hover-shadow">
+            <img src="img/163.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/173.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/111.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="f6">
+          <div class="card h-100 hover-shadow">
+            <img src="img/121.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/171.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/172.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+          <div class="card h-100 hover-shadow" >
+            <img src="img/181.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="f7" >
+          <div class="card h-100 hover-shadow">
+            <img src="img/182.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/183.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/184.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/185.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/191.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/192.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/193.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/194.png" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/888.jfif" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer" id="f6">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/999.jfif" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col">
+          <div class="card h-100 hover-shadow">
+            <img src="img/111111.jfif" class="card-img-top" alt="Palm Springs Road" />
+            <div class="card-body">
+              <h5 class="card-title">ROYAL SOLID Fan</h5>
+              <p class="card-text fs-2 text-success">
+                30.5$
+              </p>
+              <div><button class="btn btn-primary mt-2" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"><i class="fas fa-shopping-cart"></i></button><button
+                  class="btn btn-outline-success ms-1 mt-2">Shope Now</button></div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+
+  <div id="bt" class="d-flex justify-content-end"><a href="#top"><button type="button" class="btn btn-dark btn-rounded"><i
+          class="fa fa-angle-double-up"></i></button></a></div>
+
+  <!-- Footer -->
+
+  <footer class="text-center text-lg-start text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      style="background:  #2b2b2b;">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span style="color: white;">Get connected with us on social networks:</span>
+      </div>
+
+
+      <!-- Right -->
+      <div>
+        <a href="social.html" class="me-4 link-secondary">
+          <i class="fab fa-twitter" style="color: white;"></i>
+        </a>
+        <a href="social.html" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f" style="color: white;"></i>
+        </a>
+        <a href="social.html" class="me-4 link-secondary">
+          <i class="fab fa-instagram" style="color: white;"></i>
+        </a>
+        <a href="social.html" class="me-4 link-secondary">
+          <i class="fab fa-google" style="color: white;"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-4">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="img/POLICE-removebg-preview.png" style="height: 60px;" alt=""></i>
+              Fan o Fan
+            </h6>
+            <p>
+              The choice of comfertable conditioner.
+            </p>
+          </div>
+
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Bracket Fans</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Ceiling Fans</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Table Fans</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Pedestal Fans</a>
+            </p>
+          
+          </div>
+
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Social Links
+            </h6>
+            <p>
+              <a href="social.html" class="text-reset">Twitter</a>
+            </p>
+            <p>
+              <a href="social.html" class="text-reset">Facebook</a>
+            </p>
+            <p>
+              <a href="social.html" class="text-reset">Instagram</a>
+            </p>
+            <p>
+              <a href="social.html" class="text-reset">Google</a>
+            </p>
+          </div>
+
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>Aptech</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              Example@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> (675)-6754362</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> (675)-6754362</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Copyright -->
+    <div class="d-flex align-items-center justify-content-center"
+      style="background-color:  #2b2b2b; color: white;height: 40px;">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold">Fan o Fan .Ltd</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+
+</html>
